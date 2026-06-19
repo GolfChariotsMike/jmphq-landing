@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JMPHQ — Journey Management Platform</title>
+  <meta name="description" content="The modern Journey Management Platform for HSE teams. Plan, approve, track and complete field journeys with full compliance — from any device." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-mark">JMP</span><span class="logo-hq">HQ</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Request Demo</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="aurora"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Built for HSE compliance
+      </div>
+      <h1 class="hero-title reveal">
+        Journey management<br />
+        <span class="gradient-text">done properly.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Replace paper-based JMP forms with a real-time platform. Plan routes, get approvals, track checkpoints, and keep your team safe — from any device.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary btn-lg">Request a Demo</a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">See how it works ↓</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Paperless</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="60">0</span><span class="stat-suffix">s</span>
+          <span class="stat-label">QR start time</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="24">0</span><span class="stat-suffix">/7</span>
+          <span class="stat-label">Live dashboard</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-text reveal">
+          <span class="section-label">The problem</span>
+          <h2>Paper forms don't cut it in the field.</h2>
+          <p>Your team fills out a 2-page form, hands it to a supervisor, and drives into the outback. If they go overdue — nobody knows until it's too late.</p>
+          <ul class="problem-list">
+            <li><span class="x-icon">✕</span> No real-time visibility once the vehicle leaves</li>
+            <li><span class="x-icon">✕</span> Paper can't send an alert when a checkpoint is missed</li>
+            <li><span class="x-icon">✕</span> Same data re-entered every time for the same route</li>
+            <li><span class="x-icon">✕</span> Signatures lost, forms misplaced, audits impossible</li>
+          </ul>
+        </div>
+        <div class="problem-visual reveal">
+          <div class="paper-form">
+            <div class="paper-line"></div>
+            <div class="paper-line short"></div>
+            <div class="paper-line"></div>
+            <div class="paper-line med"></div>
+            <div class="paper-checkbox-row">
+              <div class="paper-checkbox"></div><div class="paper-line short"></div>
+            </div>
+            <div class="paper-checkbox-row">
+              <div class="paper-checkbox"></div><div class="paper-line med"></div>
+            </div>
+            <div class="paper-checkbox-row">
+              <div class="paper-checkbox checked"></div><div class="paper-line short"></div>
+            </div>
+            <div class="paper-line"></div>
+            <div class="paper-sig"></div>
+            <div class="paper-stamp">OVERDUE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">How it works</span>
+        <h2>Plan. Approve. Track. Complete.</h2>
+        <p>Four steps that replace every paper form you've ever printed.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">🗺️</div>
+          <h3>Plan your journey</h3>
+          <p>Map your route, set checkpoints at towns along the way, add passengers, fill the pre-journey checklist, and schedule your return leg — all in one flow.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">✅</div>
+          <h3>Get approved</h3>
+          <p>Supervisor reviews and approves with a single tap. Recurring routes can be pre-approved. Everyone signs digitally — no paper, no chasing.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">📱</div>
+          <h3>Scan & go</h3>
+          <p>Scan the QR sticker on the vehicle. Complete the final pre-start checks. The dashboard updates to <em>Journey in Progress</em> and the clock starts.</p>
+        </div>
+        <div class="step-arrow reveal">→</div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon">📍</div>
+          <h3>Check in & complete</h3>
+          <p>Scan at each checkpoint town to confirm progress. Miss a checkpoint? Your supervisor gets an SMS. Arrive safe — scan to complete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Features</span>
+        <h2>Everything your HSE team needs.</h2>
+        <p>Built around the way field teams actually work — not how a boardroom thinks they do.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card reveal" data-glow="blue">
+          <div class="feature-icon">📲</div>
+          <h3>QR Vehicle Stickers</h3>
+          <p>One permanent QR per vehicle. Scan to start, scan at checkpoints, scan to complete. The whole journey flows from a sticker on the dashboard.</p>
+        </div>
+
+        <div class="feature-card reveal feature-card--large" data-glow="orange">
+          <div class="feature-icon">🛡️</div>
+          <h3>Smart Pre-Journey Checklist</h3>
+          <p>All HSE checklist items digitised. Admin can toggle any item to "blocking" — a No answer stops the journey until resolved. Full compliance, every time.</p>
+          <div class="checklist-preview">
+            <div class="check-item check-yes"><span>✓</span> First aid kit present</div>
+            <div class="check-item check-yes"><span>✓</span> Vehicle pre-start inspection</div>
+            <div class="check-item check-yes"><span>✓</span> 10L water minimum</div>
+            <div class="check-item check-no"><span>✗</span> Road conditions checked <span class="blocked-tag">Blocked</span></div>
+          </div>
+        </div>
+
+        <div class="feature-card reveal" data-glow="green">
+          <div class="feature-icon">✍️</div>
+          <h3>Digital Signatures</h3>
+          <p>Drivers and passengers sign on screen. Supervisors approve with a saved signature — stamped automatically on every journey they approve.</p>
+        </div>
+
+        <div class="feature-card reveal" data-glow="purple">
+          <div class="feature-icon">📡</div>
+          <h3>Live Dashboard</h3>
+          <p>See every active journey at a glance. Colour-coded status — on track, due for check-in, overdue. Click any journey for full detail and history.</p>
+        </div>
+
+        <div class="feature-card reveal feature-card--large" data-glow="blue">
+          <div class="feature-icon">🔁</div>
+          <h3>Repeat Journeys</h3>
+          <p>Going to the same site again? Hit repeat — origin, destination, route, checkpoints, and call-in schedule are all pre-filled. Just update the date, vehicle, and passengers. Pre-approved routes skip the approval queue entirely.</p>
+        </div>
+
+        <div class="feature-card reveal" data-glow="orange">
+          <div class="feature-icon">🚨</div>
+          <h3>Overdue Alerts</h3>
+          <p>Miss a checkpoint? Go overdue? Your supervisor gets an SMS instantly via Twilio. Configurable per journey — some runs need monitoring, some don't.</p>
+        </div>
+
+        <div class="feature-card reveal" data-glow="green">
+          <div class="feature-icon">🚗</div>
+          <h3>Convoy Support</h3>
+          <p>Link multiple vehicles to one journey. Each driver completes their own checklist independently. One approval covers the whole convoy.</p>
+        </div>
+
+        <div class="feature-card reveal" data-glow="purple">
+          <div class="feature-icon">🎨</div>
+          <h3>White-Label Ready</h3>
+          <p>Upload your logo, set your brand colour. The platform looks like yours. JMPHQ appears only in the footer — your team sees your brand every day.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE STRIP -->
+  <section class="compliance section reveal">
+    <div class="container">
+      <div class="compliance-inner">
+        <div class="compliance-text">
+          <h2>Built for Australian HSE compliance.</h2>
+          <p>JMPHQ covers every field on the industry-standard Journey Management Plan form — fatigue management rules for both Australia and New Zealand, full audit trail, and PDF export in the format your safety team expects.</p>
+        </div>
+        <div class="compliance-badges">
+          <div class="badge-item reveal">
+            <div class="badge-icon">📋</div>
+            <span>AU & NZ fatigue rules</span>
+          </div>
+          <div class="badge-item reveal">
+            <div class="badge-icon">🔒</div>
+            <span>Full audit trail</span>
+          </div>
+          <div class="badge-item reveal">
+            <div class="badge-icon">📄</div>
+            <span>PDF export per journey</span>
+          </div>
+          <div class="badge-item reveal">
+            <div class="badge-icon">🏢</div>
+            <span>Multi-company isolation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Pricing</span>
+        <h2>Simple, transparent pricing.</h2>
+        <p>No per-journey fees. No hidden costs. Pay for your team, not your activity.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price"><span class="price-currency">$</span>99<span class="price-period">/mo</span></div>
+          <div class="pricing-desc">Perfect for small field teams getting started with digital JMPs.</div>
+          <ul class="pricing-features">
+            <li><span>✓</span> Up to 10 drivers</li>
+            <li><span>✓</span> Up to 5 vehicles</li>
+            <li><span>✓</span> Unlimited journeys</li>
+            <li><span>✓</span> QR vehicle stickers</li>
+            <li><span>✓</span> Email notifications</li>
+            <li><span>✓</span> PDF export</li>
+            <li class="disabled"><span>–</span> SMS alerts</li>
+            <li class="disabled"><span>–</span> White-label branding</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Get started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-popular">Most Popular</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-price"><span class="price-currency">$</span>249<span class="price-period">/mo</span></div>
+          <div class="pricing-desc">For growing HSE teams that need full control and real-time monitoring.</div>
+          <ul class="pricing-features">
+            <li><span>✓</span> Up to 50 drivers</li>
+            <li><span>✓</span> Up to 25 vehicles</li>
+            <li><span>✓</span> Unlimited journeys</li>
+            <li><span>✓</span> QR vehicle stickers</li>
+            <li><span>✓</span> SMS + email alerts</li>
+            <li><span>✓</span> PDF export</li>
+            <li><span>✓</span> White-label branding</li>
+            <li><span>✓</span> Convoy management</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Get started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-desc">For large organisations with complex fleets, multiple depots, or specific compliance requirements.</div>
+          <ul class="pricing-features">
+            <li><span>✓</span> Unlimited drivers</li>
+            <li><span>✓</span> Unlimited vehicles</li>
+            <li><span>✓</span> Unlimited journeys</li>
+            <li><span>✓</span> Everything in Pro</li>
+            <li><span>✓</span> Custom integrations</li>
+            <li><span>✓</span> Dedicated support</li>
+            <li><span>✓</span> SLA agreement</li>
+            <li><span>✓</span> Onboarding included</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-full">Contact us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section" id="contact">
+    <div class="aurora cta-aurora"></div>
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Ready to replace your paper forms?</h2>
+        <p>Book a demo and we'll show you how JMPHQ works for your team — set up takes less than a day.</p>
+        <form class="cta-form" id="cta-form">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Work email" required />
+          <input type="text" placeholder="Company name" required />
+          <button type="submit" class="btn btn-primary btn-lg">Request Demo</button>
+        </form>
+        <p class="cta-fine">No credit card required. We'll be in touch within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-mark">JMP</span><span class="logo-hq">HQ</span>
+          </div>
+          <p>Journey Management Platform for modern HSE teams.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 JMPHQ. All rights reserved.</span>
+        <span class="footer-powered">Built for Australian HSE teams.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
