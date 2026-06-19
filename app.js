@@ -4,21 +4,29 @@
    ============================================ */
 
 // ---- SCROLL REVEAL ----
+const REVEAL_CLASSES = ['.reveal', '.reveal-left', '.reveal-right', '.reveal-top', '.reveal-scale', '.reveal-rotate', '.reveal-flip'];
+
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
+  entries.forEach((e) => {
     if (e.isIntersecting) {
-      // Stagger siblings in same parent
-      const siblings = Array.from(e.target.parentNode.querySelectorAll('.reveal:not(.visible)'));
+      // Stagger siblings in same parent — slower, more visible
+      const allReveal = REVEAL_CLASSES.map(c => c.slice(1)).join(':not(.visible), .');
+      const siblings = Array.from(
+        e.target.parentNode.querySelectorAll(
+          REVEAL_CLASSES.map(c => `${c}:not(.visible)`).join(', ')
+        )
+      );
       const idx = siblings.indexOf(e.target);
       setTimeout(() => {
         e.target.classList.add('visible');
-      }, idx * 80);
+      }, idx * 140); // slower stagger — was 80ms
       revealObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+// Observe all reveal variants
+document.querySelectorAll(REVEAL_CLASSES.join(', ')).forEach(el => revealObserver.observe(el));
 
 
 // ---- NAV SCROLL ----
@@ -50,7 +58,7 @@ window.addEventListener('scroll', () => {
       vx: (Math.random() - 0.5) * 0.25,
       vy: -(Math.random() * 0.4 + 0.1),
       alpha: Math.random() * 0.5 + 0.1,
-      color: Math.random() > 0.6 ? '99,102,241' : Math.random() > 0.5 ? '59,130,246' : '168,85,247',
+      color: Math.random() > 0.6 ? '255,107,43' : Math.random() > 0.5 ? '232,93,32' : '245,158,11',
     };
   }
 
