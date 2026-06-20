@@ -143,14 +143,15 @@ body {
   background: conic-gradient(
     from 0deg at 50% 50%,
     transparent 0deg,
-    rgba(255,107,43,0.07) 60deg,
-    rgba(232,93,32,0.10) 120deg,
-    rgba(245,158,11,0.06) 180deg,
-    transparent 240deg,
-    rgba(255,107,43,0.05) 300deg,
+    rgba(255,107,43,0.22) 50deg,
+    rgba(232,93,32,0.32) 110deg,
+    rgba(245,158,11,0.18) 170deg,
+    transparent 230deg,
+    rgba(255,107,43,0.18) 290deg,
+    rgba(232,93,32,0.22) 340deg,
     transparent 360deg
   );
-  filter: blur(80px);
+  filter: blur(55px);
   animation: aurora-spin 25s linear infinite;
   z-index: 0;
 }
@@ -160,12 +161,14 @@ body {
   background: conic-gradient(
     from 90deg at 40% 60%,
     transparent 0deg,
-    rgba(245,158,11,0.06) 60deg,
-    rgba(255,107,43,0.08) 120deg,
-    rgba(232,93,32,0.05) 180deg,
-    transparent 300deg
+    rgba(245,158,11,0.18) 50deg,
+    rgba(255,107,43,0.28) 110deg,
+    rgba(232,93,32,0.20) 170deg,
+    transparent 260deg,
+    rgba(255,107,43,0.15) 320deg,
+    transparent 360deg
   );
-  filter: blur(100px);
+  filter: blur(70px);
 }
 @keyframes aurora-spin {
   from { transform: rotate(0deg); }
